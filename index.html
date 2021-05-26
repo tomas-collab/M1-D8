@@ -70,6 +70,8 @@
       */
 
       function firstUlDisappear(){
+        document.getElementById('firstList').remove()
+          
 
       }
       
@@ -79,6 +81,9 @@
       */
 
       function paintItGreen(){
+          for (let color of document.querySelectorAll('ul')){
+              color.style.backgroundColor = '#7CFC00'
+          }
 
       }
 
@@ -129,6 +134,15 @@
     </style>
   </head>
   <body>
+    <button onclick="changeTitle()">change title</button>
+    <button onclick="addClassToTitle()">addClassToTitle</button>
+    <button onclick="changePcontent()">change p</button>
+    <button onclick="changeUrls()">change Urls</button>
+    <button onclick="addToTheSecond()">addToTheSecond</button>
+    <button onclick="addParagraph()">addParagraph</button>
+    <button onclick="firstUlDisappear()">firstUlDisappear</button>
+    <button onclick="paintItGreen()">paintItGreen</button>
+    <button onclick="change()">change h1</button>
     <header>
       <h1>This is the title of the page</h1>
       <h2>This is the subtitle of the page</h2>
